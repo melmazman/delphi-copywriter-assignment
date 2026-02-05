@@ -1,38 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>UX Copywriter Assignment - Delphi</title>
-      <style>
-                * { margin: 0; padding: 0; box-sizing: border-box; }
-                body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; background: #fff; padding: 40px; max-width: 900px; margin: 0 auto; }
-                .header { text-align: center; padding-bottom: 30px; border-bottom: 3px solid #1a1a1a; margin-bottom: 40px; }
-                .header h1 { font-size: 32px; font-weight: 700; margin-bottom: 8px; }
-                .header .subtitle { font-size: 16px; color: #666; }
-                h2 { font-size: 22px; font-weight: 700; margin: 40px 0 20px 0; padding-bottom: 8px; border-bottom: 2px solid #e0e0e0; }
-                h3 { font-size: 18px; font-weight: 600; margin: 25px 0 12px 0; color: #333; }
-                p { margin-bottom: 12px; }
-                .brand-context { background: #f8f9fa; padding: 30px; border-radius: 12px; margin-bottom: 40px; }
-            </style>
-  </head>
-  <body>
-        <div class="header">
-                  <h1>UX Copywriter Assignment</h1>
-                <p class="subtitle">Delphi Website Copy - February 2026</p>p>
-        </div>div>
-      <div class="brand-context">
-              <h2>Brand Context</h2>
-              <h3>What is Delphi?</h3>
-              <p>Delphi is a Digital Mind - an AI-powered representation of your thinking, voice, and judgment that can answer, guide, and connect in your voice, 24/7.</p>
-              <h3>Who Delphi Is For</h3>
-              <p>People whose relationships depend on what they know - CEOs, founders, creators, experts, professors, coaches. Anyone with real experience who has repetitive professional conversations.</p>
-      </div>div>
-      <h2>Your Assignment</h2>
-      <p>Write copy for three sections of the Delphi website: Hero Section, Use Cases Section, and ICP Section for Professors.</p>
-      <p>Full assignment details at: <a href="computer:///sessions/admiring-ecstatic-ptolemy/mnt/outputs/UX_Copywriter_Assignment_Delphi.html">View Full Assignment PDF</a>a></p>
-  </body>
-</html>html></p></p></h2></h1>
-  </body>
-      </style></title>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Copywriter Assignment - Delphi</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6; color: #1a1a1a; background: #fff;
+            padding: 40px; max-width: 900px; margin: 0 auto;
+        }
+        .header { text-align: center; padding-bottom: 30px; border-bottom: 3px solid #1a1a1a; margin-bottom: 40px; }
+        .header h1 { font-size: 32px; font-weight: 700; margin-bottom: 8px; }
+        .header .subtitle { font-size: 16px; color: #666; }
+        h2 { font-size: 22px; font-weight: 700; margin: 40px 0 20px 0; padding-bottom: 8px; border-bottom: 2px solid #e0e0e0; }
+        h3 { font-size: 18px; font-weight: 600; margin: 25px 0 12px 0; color: #333; }
+        p { margin-bottom: 12px; }
+        .brand-context { background: #f8f9fa; padding: 30px; border-radius: 12px; margin-bottom: 40px; }
+        .brand-context h2 { margin-top: 0; border-bottom: none; padding-bottom: 0; }
+        .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 20px 0; }
+        .column-box { background: #fff; padding: 20px; border-radius: 8px; border: 1px solid #e0e0e0; }
+        .column-box h4 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #666; margin-bottom: 12px; }
+        .column-box ul { list-style: none; padding: 0; }
+        .column-box li { padding: 6px 0; padding-left: 16px; position: relative; }
+        .journey-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        .journey-table th, .journey-table td { padding: 12px 15px; text-align: left; border: 1px solid #e0e0e0; }
+        .journey-table th { background: #f0f0f0; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .journey-table td { font-size: 14px; vertical-align: top; }
+        .journey-table .arrow { text-align: center; font-size: 18px; color: #666; border: none; background: transparent; }
+        .examples-box { background: #fff; padding: 20px; border-radius: 8px; border: 1px solid #e0e0e0; margin: 15px 0; }
+        .examples-box h4 { font-size: 14px; font-weight: 700; color: #333; margin-bottom: 12px; }
+        .example-item { padding: 10px 0; border-bottom: 1px solid #f0f0f0; font-size: 14px; }
+        .example-item:last-child { border-bottom: none; }
+        .do-dont { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+        .do-box { background: #e8f5e9; padding: 20px; border-radius: 8px; border-left: 4px solid #4caf50; }
+        .dont-box { background: #ffebee; padding: 20px; border-radius: 8px; border-left: 4px solid #f44336; }
+        .do-box h4, .dont-box h4 { font-size: 14px; font-weight: 700; margin-bottom: 10px; }
+        .do-box h4 { color: #2e7d32; }
+        .dont-box h4 { color: #c62828; }
+        .do-box ul, .dont-box ul { list-style: none; padding: 0; font-size: 14px; }
+        .assignment-box { background: #fff; border: 2px solid #1a1a1a; border-radius: 12px; padding: 30px; margin: 30px 0; }
+        .assignment-number { display: inline-block; background: #1a1a1a; color: #fff; width: 32px; height: 32px; border-radius: 50%; text-align: center; line-height: 32px; font-weight: 700; margin-right: 12px; }
+        .assignment-title { display: inline; font-size: 20px; font-weight: 700; }
+        .scenario-list { background: #fafafa; padding: 20px; border-radius: 8px; margin: 15px 0; }
+        .scenario-list h4 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; color: #666; margin-bottom: 12px; }
+        .scenario-list ol { margin: 0; padding-left: 20px; }
+        .scenario-list li { padding: 8px 0; color: #333; font-size: 14px; }
+        .deliverables { background: #fffde7; padding: 20px; border-radius: 8px; margin-top: 20px; border-left: 4px solid #ffc107; }
+        .deliverables h4 { font-size: 14px; font-weight: 700; margin-bottom: 10px; color: #f57f17; }
+        .deliverables ul { list-style: none; padding: 0; }
+        .wireframe-container { background: #1a1a1a; border-radius: 12px; padding: 20px; margin: 25px 0; }
+        .wireframe-label { color: #888; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; }
+        .wireframe-browser { background: #fff; border-radius: 8px; overflow: hidden; }
+        .browser-bar { background: #f0f0f0; padding: 10px 15px; display: flex; align-items: center; gap: 8px; }
+        .browser-dot { width: 12px; height: 12px; border-radius: 50%; background: #ddd; }
+        .browser-dot.red { background: #ff5f57; }
+        .browser-dot.yellow { background: #febc2e; }
+        .browser-dot.green { background: #28c840; }
+        .browser-url { flex: 1; background: #fff; border-radius: 4px; padding: 5px 12px; font-size: 12px; color: #666; margin-left: 10px; }
+        .wireframe-hero-content { padding: 60px 40px; text-align: center; background: linear-gradient(180deg, #fafafa 0%, #fff 100%); }
+        .wireframe-nav { display: flex; justify-content: space-between; align-items: center; padding: 0 0 40px 0; }
+        .wireframe-logo { width: 80px; height: 24px; background: #e0e0e0; border-radius: 4px; }
+        .wireframe-nav-links { display: flex; gap: 20px; }
+        .wireframe-nav-link { width: 50px; height: 12px; background: #e8e8e8; border-radius: 2px; }
+        .hero-tagline-placeholder { background: linear-gradient(90deg, #d0d0d0 0%, #e0e0e0 50%, #d0d0d0 100%); height: 56px; width: 80%; max-width: 500px; margin: 0 auto 20px auto; border-radius: 6px; display: flex; align-items: center; justify-content: center; }
+        .hero-tagline-placeholder span { color: #888; font-size: 13px; font-style: italic; }
+        .hero-subhead-placeholder { background: #e8e8e8; height: 20px; width: 60%; max-width: 400px; margin: 0 auto 30px auto; border-radius: 4px; display: flex; align-items: center; justify-content: center; }
+        .hero-subhead-placeholder span { color: #999; font-size: 11px; font-style: italic; }
+        .hero-cta { display: inline-block; background: #1a1a1a; color: #fff; padding: 14px 28px; border-radius: 8px; font-size: 14px; font-weight: 600; }
+        .wireframe-usecases-content { padding: 40px; background: #fff; }
+        .usecases-header { text-align: center; margin-bottom: 30px; }
+        .usecases-title-placeholder { background: #e0e0e0; height: 32px; width: 250px; margin: 0 auto 10px auto; border-radius: 4px; }
+        .usecases-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+        .usecase-card { background: #fafafa; border: 1px solid #e8e8e8; border-radius: 12px; padding: 20px 15px; text-align: center; position: relative; }
+        .usecase-icon { width: 40px; height: 40px; background: #e0e0e0; border-radius: 10px; margin: 0 auto 12px auto; }
+        .usecase-title-placeholder { background: #d0d0d0; height: 14px; width: 80%; margin: 0 auto 10px auto; border-radius: 3px; }
+        .usecase-desc-placeholder { background: #e8e8e8; height: 8px; width: 90%; margin: 5px auto; border-radius: 2px; }
+        .usecase-number { position: absolute; top: -8px; left: -8px; background: #1a1a1a; color: #fff; width: 22px; height: 22px; border-radius: 50%; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+        .wireframe-icp-content { padding: 40px; background: #f8f9fa; }
+        .icp-header { text-align: center; margin-bottom: 30px; }
+        .icp-title-placeholder { background: #e0e0e0; height: 28px; width: 220px; margin: 0 auto 10px auto; border-radius: 4px; }
+        .icp-intro-placeholder { background: #e8e8e8; height: 14px; width: 70%; margin: 0 auto; border-radius: 3px; }
+        .icp-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .icp-card { background: #fff; border-radius: 12px; padding: 24px; position: relative; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+        .icp-card-icon { width: 40px; height: 40px; background: #e0e0e0; border-radius: 10px; margin-bottom: 16px; }
+        .icp-card-title { background: #d0d0d0; height: 16px; width: 70%; border-radius: 3px; margin-bottom: 12px; }
+        .icp-card-desc { background: #e8e8e8; height: 10px; width: 100%; border-radius: 2px; margin-bottom: 6px; }
+        .footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #e0e0e0; text-align: center; color: #999; font-size: 14px; }
+        @media print { body { padding: 20px; } .assignment-box { break-inside: avoid; } }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>UX Copywriter Assignment</h1>
+        <p class="subtitle">Delphi Website Copy — February 2026</p>
+    </div>
+
+    <div class="brand-context">
+        <h2>Brand Context: Everything You Need</h2>
+        <h3>What is Delphi?</h3>
+        <p>Delphi is a <strong>Digital Mind</strong> — an AI-powered representation of your thinking, voice, and judgment that can answer, guide, and connect in your voice, 24/7. It's not a chatbot or a clone. It's a reflection of your knowledge that lets others learn through conversation.</p>
+        <div class="two-column">
+            <div class="column-box">
+                <h4>Who Delphi Is For</h4>
+                <ul>
+                    <li>People whose relationships depend on what they know and how they think</li>
+                    <li>CEOs, founders, creators, experts, professors, coaches</li>
+                    <li>Anyone with real experience who has repetitive professional conversations</li>
+                    <li>People who have others wanting to talk to them but limited time</li>
+                </ul>
+            </div>
+            <div class="column-box">
+                <h4>What Users Should Think/Feel/Know</h4>
+                <ul>
+                    <li><strong>Think:</strong> "My intelligence deserves to be shared at scale"</li>
+                    <li><strong>Feel:</strong> Trust, confidence, excitement — like discovering something magical yet rewarding</li>
+                    <li><strong>Know:</strong> Delphi handles the repetitive parts of conversations so they can focus on the interesting, high-value moments</li>
+                </ul>
+            </div>
+        </div>
+        <h3>The User Journey</h3>
+        <table class="journey-table">
+            <tr><th>Where They Are Now</th><th class="arrow"></th><th>Where We Want Them</th></tr>
+            <tr><td>They know they're the bottleneck — too many people need their time</td><td class="arrow">→</td><td>They see Delphi as a way to unblock themselves</td></tr>
+            <tr><td>They're wary of AI — afraid of being replaced</td><td class="arrow">→</td><td>They understand Delphi amplifies (not replaces) them</td></tr>
+            <tr><td>They think this is only for influencers</td><td class="arrow">→</td><td>They realize even 5 similar conversations a week adds up</td></tr>
+        </table>
+        <div class="examples-box">
+            <h4>Examples of Repetitive Conversations Delphi Can Handle</h4>
+            <div class="example-item"><strong>The intro call:</strong> Explaining your career path, background — every first meeting</div>
+            <div class="example-item"><strong>The founder story:</strong> Why you started, company culture — to every candidate, investor, journalist</div>
+            <div class="example-item"><strong>The syllabus questions:</strong> Students asking about exams when it's in the syllabus</div>
+        </div>
+        <h3>Voice & Tone</h3>
+        <p>Intelligent but warm. Thoughtful, conversational, and precise. Empowering — it invites users to own and expand their brilliance.</p>
+        <div class="do-dont">
+            <div class="do-box"><h4>DO</h4><ul><li>Center copy around the user's brilliance</li><li>Call it a "Digital Mind"</li><li>Emphasize control and ownership</li></ul></div>
+            <div class="dont-box"><h4>DON'T</h4><ul><li>Say "clone" or "replica"</li><li>Call it automation</li><li>Use words like "workflow" or "bot"</li></ul></div>
+        </div>
+    </div>
+
+    <h2>Your Assignment</h2>
+    <p>Write copy for the following three sections of the Delphi website.</p>
+
+    <div class="assignment-box">
+        <span class="assignment-number">1</span>
+        <h3 class="assignment-title">Hero Section</h3>
+        <p class="assignment-description">Write the main headline and supporting copy for the homepage hero. This is the first thing visitors see.</p>
+        <div class="wireframe-container">
+            <div class="wireframe-label">Visual Reference</div>
+            <div class="wireframe-browser">
+                <div class="browser-bar">
+                    <div class="browser-dot red"></div>
+                    <div class="browser-dot yellow"></div>
+                    <div class="browser-dot green"></div>
+                    <div class="browser-url">delphi.ai</div>
+                </div>
+                <div class="wireframe-hero-content">
+                    <div class="wireframe-nav">
+                        <div class="wireframe-logo"></div>
+                        <div class="wireframe-nav-links">
+                            <div class="wireframe-nav-link"></div>
+                            <div class="wireframe-nav-link"></div>
+                            <div class="wireframe-nav-link"></div>
+                        </div>
+                    </div>
+                    <div class="hero-tagline-placeholder"><span>Your headline goes here</span></div>
+                    <div class="hero-subhead-placeholder"><span>Your supporting line goes here</span></div>
+                    <div class="hero-cta">Create Your Digital Mind</div>
+                </div>
+            </div>
+        </div>
+        <div class="scenario-list">
+            <h4>What the hero needs to accomplish</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li style="padding: 6px 0;">Instant understanding of what Delphi is and why it matters</li>
+                <li style="padding: 6px 0;">Create desire — visitors should want this for themselves</li>
+                <li style="padding: 6px 0;">Work for someone who has never heard of Delphi before</li>
+                <li style="padding: 6px 0;">Feel high-status and aspirational without being exclusive</li>
+            </ul>
+        </div>
+        <div class="deliverables">
+            <h4>Deliverables</h4>
+            <ul><li>2-3 headline options with supporting copy for each</li><li>Brief rationale for your top recommendation</li></ul>
+        </div>
+    </div>
+
+    <div class="assignment-box">
+        <span class="assignment-number">2</span>
+        <h3 class="assignment-title">Use Cases Section</h3>
+        <p class="assignment-description">Write copy for a section showing where Delphi fits in someone's life.</p>
+        <div class="wireframe-container">
+            <div class="wireframe-label">Visual Reference</div>
+            <div class="wireframe-browser">
+                <div class="browser-bar">
+                    <div class="browser-dot red"></div>
+                    <div class="browser-dot yellow"></div>
+                    <div class="browser-dot green"></div>
+                    <div class="browser-url">delphi.ai/#use-cases</div>
+                </div>
+                <div class="wireframe-usecases-content">
+                    <div class="usecases-header"><div class="usecases-title-placeholder"></div></div>
+                    <div class="usecases-grid">
+                        <div class="usecase-card"><div class="usecase-number">1</div><div class="usecase-icon"></div><div class="usecase-title-placeholder"></div><div class="usecase-desc-placeholder"></div></div>
+                        <div class="usecase-card"><div class="usecase-number">2</div><div class="usecase-icon"></div><div class="usecase-title-placeholder"></div><div class="usecase-desc-placeholder"></div></div>
+                        <div class="usecase-card"><div class="usecase-number">3</div><div class="usecase-icon"></div><div class="usecase-title-placeholder"></div><div class="usecase-desc-placeholder"></div></div>
+                        <div class="usecase-card"><div class="usecase-number">4</div><div class="usecase-icon"></div><div class="usecase-title-placeholder"></div><div class="usecase-desc-placeholder"></div></div>
+                    </div>
+                    <div class="usecases-grid" style="margin-top: 15px;">
+                        <div class="usecase-card"><div class="usecase-number">5</div><div class="usecase-icon"></div><div class="usecase-title-placeholder"></div><div class="usecase-desc-placeholder"></div></div>
+                        <div class="usecase-card"><div class="usecase-number">6</div><div class="usecase-icon"></div><div class="usecase-title-placeholder"></div><div class="usecase-desc-placeholder"></div></div>
+                        <div class="usecase-card"><div class="usecase-number">7</div><div class="usecase-icon"></div><div class="usecase-title-placeholder"></div><div class="usecase-desc-placeholder"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scenario-list">
+            <h4>Scenarios to address (write title + description for each)</h4>
+            <ol>
+                <li>Replace static website with something interactive</li>
+                <li>Drowning in intro calls — need to handle initial touchpoint</li>
+                <li>First 15 min of every meeting is background — want stakeholders prepared</li>
+                <li>Years of content people can't easily search or connect</li>
+                <li>Big moment coming (launch, fundraise) — need to be available at scale</li>
+                <li>Interactive resume use case</li>
+                <li>Too many people asking for advice/mentorship to scale</li>
+            </ol>
+        </div>
+        <div class="deliverables">
+            <h4>Deliverables</h4>
+            <ul><li>Section headline</li><li>Title + 1-2 sentence description for each of the 7 scenarios</li></ul>
+        </div>
+    </div>
+
+    <div class="assignment-box">
+        <span class="assignment-number">3</span>
+        <h3 class="assignment-title">ICP Section — Professors</h3>
+        <p class="assignment-description">Write a targeted section for university professors and academics.</p>
+        <div class="wireframe-container">
+            <div class="wireframe-label">Visual Reference</div>
+            <div class="wireframe-browser">
+                <div class="browser-bar">
+                    <div class="browser-dot red"></div>
+                    <div class="browser-dot yellow"></div>
+                    <div class="browser-dot green"></div>
+                    <div class="browser-url">delphi.ai/for/professors</div>
+                </div>
+                <div class="wireframe-icp-content">
+                    <div class="icp-header">
+                        <div class="icp-title-placeholder"></div>
+                        <div class="icp-intro-placeholder"></div>
+                    </div>
+                    <div class="icp-cards">
+                        <div class="icp-card"><div class="icp-card-icon"></div><div class="icp-card-title"></div><div class="icp-card-desc"></div><div class="icp-card-desc"></div></div>
+                        <div class="icp-card"><div class="icp-card-icon"></div><div class="icp-card-title"></div><div class="icp-card-desc"></div><div class="icp-card-desc"></div></div>
+                        <div class="icp-card"><div class="icp-card-icon"></div><div class="icp-card-title"></div><div class="icp-card-desc"></div><div class="icp-card-desc"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scenario-list">
+            <h4>Problems professors face that Delphi solves</h4>
+            <ol>
+                <li>Students constantly need guidance but office hours are limited — same questions over and over</li>
+                <li>Professors want to mentor more students but there aren't enough hours</li>
+                <li>Their research sits in PDFs and journals that nobody engages with conversationally</li>
+            </ol>
+        </div>
+        <div class="deliverables">
+            <h4>Deliverables</h4>
+            <ul><li>Section headline for academics</li><li>1-2 sentence section intro</li><li>Title + description for each of the 3 problems/solutions</li></ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Questions? Reach out to the team. Good luck!</p>
+    </div>
+</body>
+</html>
